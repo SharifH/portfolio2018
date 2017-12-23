@@ -1,0 +1,268 @@
+import React, {StyleSheet, Dimensions, PixelRatio} from "react-native";
+const {width, height, scale} = Dimensions.get("window"),
+    vw = width / 100,
+    vh = height / 100,
+    vmin = Math.min(vw, vh),
+    vmax = Math.max(vw, vh);
+
+export default StyleSheet.create({
+    "html": {
+        "marginTop": 0,
+        "marginRight": 0,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "width": "100%",
+        "height": "100%",
+        "backgroundColor": "#333",
+        "overflow": "hidden",
+        "display": "none",
+        "opacity": 0,
+        "transition": "opacity 1s ease"
+    },
+    "body": {
+        "marginTop": 0,
+        "marginRight": 0,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "width": "100%",
+        "height": "100%",
+        "backgroundColor": "#333",
+        "overflow": "hidden"
+    },
+    "projectContainer": {
+        "width": "100%",
+        "height": "100%",
+        "overflowY": "auto",
+        "overflowX": "hidden",
+        "position": "absolute"
+    },
+    "projectContainer *": {
+        "OTransition": "all .7s ease",
+        "MozTransition": "all .7s ease",
+        "WebkitTransition": "all .7s ease",
+        "MsTransition": "all .7s ease",
+        "transition": "all .7s ease"
+    },
+    "message": {
+        "OTransition": "transform .7s, left 2s ease, block 0s",
+        "MozTransition": "transform .7s, left 2s ease, block 0s",
+        "WebkitTransition": "transform .7s, left 2s, block 0s",
+        "MsTransition": "transform .7s, left 2s, block 0s",
+        "transition": "transform .7s, left 2s, block 0s",
+        "color": "#333",
+        "paddingTop": 8 * vh,
+        "paddingBottom": 8 * vh,
+        "OBoxSizing": "border-box",
+        "MozBoxSizing": "border-box",
+        "WebkitBoxSizing": "border-box",
+        "MsBoxSizing": "border-box",
+        "boxSizing": "border-box",
+        "wordWrap": "break-word",
+        "overflow": "hidden",
+        "width": "100%",
+        "height": "100%",
+        "backgroundColor": "#fff",
+        "position": "absolute"
+    },
+    "messageContent": {
+        "width": "100%",
+        "height": "100%",
+        "backgroundColor": "transparent",
+        "position": "relative",
+        "zIndex": 10000,
+        "overflow": "auto"
+    },
+    "*": {
+        "fontFamily": "'Raleway', sans-serif",
+        "fontWeight": "100",
+        "color": "#fff",
+        "WebkitBackfaceVisibility": "hidden",
+        "WebkitPerspective": 1000,
+        "WebkitFontSmoothing": "subpixel-antialiased"
+    },
+    "superTextContainer": {
+        "position": "absolute",
+        "top": "50%",
+        "OTransform": "translate(0%, -50%)",
+        "MozTransform": "translate(0%, -50%)",
+        "WebkitTransform": "translate(0%, -50%)",
+        "MsTransform": "translate(0%, -50%)",
+        "transform": "translate(0%, -50%)",
+        "width": "100%",
+        "OBoxSizing": "border-box",
+        "MozBoxSizing": "border-box",
+        "WebkitBoxSizing": "border-box",
+        "MsBoxSizing": "border-box",
+        "boxSizing": "border-box"
+    },
+    "textContainer": {
+        "marginTop": "auto",
+        "marginRight": "auto",
+        "marginBottom": "auto",
+        "marginLeft": "auto",
+        "display": "auto",
+        "color": "#333",
+        "textAlign": "center",
+        "fontSize": 10 * vh
+    },
+    "messageOneBow": {
+        "width": 10 * vh,
+        "height": 5 * vh,
+        "marginTop": 5 * vh,
+        "marginRight": "auto",
+        "marginBottom": "auto",
+        "marginLeft": "auto",
+        "maxHeight": 50,
+        "background": "#FF2F30",
+        "OTransition": "all 1s ease",
+        "MozTransition": "all 1s ease",
+        "WebkitTransition": "all 1s ease",
+        "MsTransition": "all 1s ease",
+        "transition": "all 1s ease"
+    },
+    "messageOneBow div": {
+        "OTransition": "all .5s ease",
+        "MozTransition": "all .5s ease",
+        "WebkitTransition": "all .5s ease",
+        "MsTransition": "all .5s ease",
+        "transition": "all .5s ease",
+        "width": 0 * vh
+    },
+    "messageOneBow div:nth-child(1)": {
+        "marginTop": "auto",
+        "marginRight": "auto",
+        "marginBottom": "auto",
+        "marginLeft": "auto",
+        "height": 10 * vh,
+        "backgroundColor": "#FF2F30",
+        "maxWidth": 10 * vh,
+        "boxShadow": "0px 0px 2vh #333",
+        "OTransform": "rotate(45deg) translate(-18%, -18%)",
+        "MozTransform": "rotate(45deg) translate(-18%, -18%)",
+        "WebkitTransform": "rotate(45deg) translate(-18%, -18%)",
+        "MsTransform": "rotate(45deg) translate(-18%, -18%)",
+        "transform": "rotate(45deg) translate(-18%, -18%)"
+    },
+    "messageOneBow div:nth-child(2)": {
+        "marginTop": "auto",
+        "marginRight": "auto",
+        "marginBottom": "auto",
+        "marginLeft": "auto",
+        "height": 8 * vh,
+        "backgroundColor": "#FF2F30",
+        "boxShadow": "0px 0px 2vh #333",
+        "position": "absolute",
+        "left": "50%",
+        "OTransform": "translate(-50%, -145%)",
+        "MozTransform": "translate(-50%, -145%)",
+        "WebkitTransform": "translate(-50%, -145%)",
+        "MsTransform": "translate(-50%, -145%)",
+        "transform": "translate(-50%, -145%)"
+    },
+    "scrollButtonDown": {
+        "color": "#333",
+        "fontSize": 3 * vh,
+        "position": "fixed",
+        "bottom": 0,
+        "width": "100%",
+        "textAlign": "center",
+        "fontWeight": "400",
+        "opacity": 0,
+        "OTransition": "all 1s ease",
+        "MozTransition": "all 1s ease",
+        "WebkitTransition": "all 1s ease",
+        "MsTransition": "all 1s ease",
+        "transition": "all 1s ease",
+        "lineHeight": 3 * vh,
+        "paddingBottom": 1 * vh
+    },
+    "scrollButtonUp": {
+        "color": "#333",
+        "fontSize": 3 * vh,
+        "position": "fixed",
+        "top": 0,
+        "width": "100%",
+        "textAlign": "center",
+        "fontWeight": "400",
+        "opacity": 0,
+        "display": "none",
+        "OTransition": "all 1s ease",
+        "MozTransition": "all 1s ease",
+        "WebkitTransition": "all 1s ease",
+        "MsTransition": "all 1s ease",
+        "transition": "all 1s ease",
+        "lineHeight": 3 * vh,
+        "paddingTop": 1 * vh,
+        "zIndex": 100000000
+    },
+    "[data-zoom]": {
+        "OTransform": "scale(.8)",
+        "MozTransform": "scale(.8)",
+        "WebkitTransform": "scale(.8)",
+        "MsTransform": "scale(.8)",
+        "transform": "scale(.8)"
+    },
+    "audioControls": {
+        "position": "fixed",
+        "bottom": 0,
+        "left": 0,
+        "color": "#333",
+        "cursor": "default",
+        "width": 32,
+        "height": 32,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "backgroundRepeat": "no-repeat",
+        "backgroundPosition": "-99999px -99999px",
+        "OTransition": "all .5s ease",
+        "MozTransition": "all .5s ease",
+        "WebkitTransition": "all .5s ease",
+        "MsTransition": "all .5s ease",
+        "transition": "all .5s ease"
+    },
+    "[audioPlaying]": {
+        "backgroundImage": "url(https://onedrive.live.com/download?resid=C20DCB16FD6A5AD7!14810&authkey=!AFO1dARdZbNCC2A&v=3&ithint=photo%2cpng)",
+        "backgroundPosition": "center center !important"
+    },
+    "[audioPaused]": {
+        "backgroundImage": "url(https://onedrive.live.com/download?resid=C20DCB16FD6A5AD7!14809&authkey=!ALnTNX5dB_dSVXg&v=3&ithint=photo%2cpng)",
+        "backgroundPosition": "center center !important"
+    },
+    "hiddenImages": {
+        "backgroundImage": "url(https://onedrive.live.com/download?resid=C20DCB16FD6A5AD7!14809&authkey=!ALnTNX5dB_dSVXg&v=3&ithint=photo%2cpng), url(https://onedrive.live.com/download?resid=C20DCB16FD6A5AD7!14810&authkey=!AFO1dARdZbNCC2A&v=3&ithint=photo%2cpng)",
+        "display": "none"
+    },
+    "snowFlakes": {
+        "position": "fixed",
+        "zIndex": -1
+    },
+    "snowflakeYContainer": {
+        "WebkitAnimation": "snowflakeY 60s infinite linear",
+        "MsAnimation": "snowflakeY 60s infinite linear",
+        "MozAnimation": "snowflakeY 60s infinite linear",
+        "OAnimation": "snowflakeY 60s infinite linear",
+        "animation": "snowflakeY 60s infinite linear",
+        "height": 1000 * vh,
+        "width": 100 * vw,
+        "position": "absolute",
+        "top": -892 * vh,
+        "OTransition": "left 5s linear !important",
+        "MozTransition": "left 5s linear !important",
+        "WebkitTransition": "left 5s linear !important",
+        "MsTransition": "left 5s linear !important",
+        "transition": "left 5s linear !important"
+    },
+    "snowflake": {
+        "borderRadius": "50%",
+        "border": "1px solid #333",
+        "position": "absolute"
+    }
+});
