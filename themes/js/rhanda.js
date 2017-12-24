@@ -1,3 +1,11 @@
+$(document.body).on('touchmove', onScroll); // for mobile
+// callback
+function onScroll(){
+    if( $(window).scrollTop() + window.innerHeight >= document.body.scrollHeight ) {
+        track_page++;
+        load_contents(track_page);
+    }
+}
 window.addEventListener('load', function() {
 	var superContainer = document.documentElement;
   var scrollIndicatorTransitionTime = 1000; //based on transition time of the scroll indicator labels
