@@ -16,7 +16,7 @@ export default StyleSheet.create({
         "paddingBottom": 0,
         "paddingLeft": 0,
         "width": "100%",
-        "height": "100%",
+        "height": "110%",
         "backgroundColor": "#333",
         "overflow": "hidden",
         "display": "none",
@@ -33,7 +33,7 @@ export default StyleSheet.create({
         "paddingBottom": 0,
         "paddingLeft": 0,
         "width": "100%",
-        "height": "100%",
+        "height": "110%",
         "backgroundColor": "#333",
         "overflow": "hidden"
     },
